@@ -1,0 +1,61 @@
+site_name: PartyService
+site_description: Documentation for PartyService
+site_author: Vaschex
+site_url: https://vaschex.github.io/PartyService/
+
+repo_name: github.com/Vaschex/PartyService
+repo_url: https://github.com/Vaschex/PartyService
+edit_uri: ""
+
+theme:
+  #logo: https://user-images.githubusercontent.com/51117782/104590568-71724f80-5663-11eb-9bc1-344fc2a4193c.png
+  #favicon: https://user-images.githubusercontent.com/51117782/113474423-cefa8900-9467-11eb-8678-d69cbb0b3966.png
+  name: material
+  features:
+    - navigation.tabs
+    #- navigation.instant
+    #- navigation.sections
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  highlightjs: true
+  hljs_languages:
+    - lua
+
+extra_javascript:
+  - javascripts/tags.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/Vaschex/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/Vaschex
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCdv59AWoiGNwPiBYgNNhwnQ
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+
+nav:
+  - Home:
+    - Introduction: index.md
