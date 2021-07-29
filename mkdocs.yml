@@ -8,7 +8,7 @@ repo_url: https://github.com/Vaschex/PartyService
 edit_uri: ""
 
 theme:
-  #logo: logo
+  #logo: 
   favicon: assets/favicon.png
   name: material
   features:
