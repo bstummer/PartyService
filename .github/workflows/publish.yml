@@ -1,4 +1,4 @@
-name: deploy docs
+name: publish
 on:
   push:
     branches: 
