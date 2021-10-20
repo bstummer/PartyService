@@ -9,7 +9,7 @@ edit_uri: ""
 
 theme:
   #logo: 
-  favicon: assets/favicon.png
+  #mkdosfavicon: assets/favicon.png
   name: material
   features:
     - navigation.tabs
