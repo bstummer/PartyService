@@ -10,11 +10,17 @@ edit_uri: ""
 theme:
   #logo: 
   #mkdosfavicon: assets/favicon.png
+  #icon:
+    #repo: fontawesome/brands/github
   name: material
   features:
-    - navigation.tabs
-    #- navigation.instant
-    #- navigation.sections
+    #- navigation.tabs
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -38,21 +44,28 @@ theme:
 
 extra:
   social:
-    - icon: fontawesome/brands/github-alt
+    - icon: fontawesome/brands/github
       link: https://github.com/Vaschex/
+      name: Vaschex on GitHub
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/Vaschex
+      name: Vaschex on Twitter
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/channel/UCdv59AWoiGNwPiBYgNNhwnQ
+      name: Vaschex on YouTube
 
 markdown_extensions:
   - admonition
-  - codehilite:
-      guess_lang: false
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.details
   - toc:
       permalink: true
-  - pymdownx.superfences
 
 nav:
   - Home:
     - Introduction: index.md
+    - Tutorial: tutorial.md
+    - API: api.md
+    - About: about.md
+    - Changelog: changelog.md
