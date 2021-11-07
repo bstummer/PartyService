@@ -2,11 +2,11 @@ This section introduces basic functions of the module.
 
 <hr>
 
-Firstly, get the module [here](https://www.roblox.com/library/6864341290) and insert it into your game (preferably ReplicatedStorage).
+Firstly, get the module [here](https://www.roblox.com/library/6864341290) and insert it into your game (preferably ServerStorage).
 
 PartyService only works on the server. Create a script and require it:
 ```lua
-local PartyService = require(game.ReplicatedStorage.PartyService)
+local PartyService = require(game.ServerStorage.PartyService)
 ```
 
 <br>

@@ -170,7 +170,7 @@ Checks if the given player is in a queue, if the 2nd argument is provided it che
 ```lua
 TeleportAsyncResult TeleportAsync(int64 placeId, Player | Party | {Player | Party} players, TeleportOptions teleportOptions?)
 ```
-This is a wrapper around `TeleportService:TeleportAsync` which manages TeleportData. It ensures that parties persist after teleports.
+This is a wrapper around `TeleportService:TeleportAsync` which manages TeleportData. It ensures that parties persist after teleports. Please pass parties and not the players of the party in order to make it to work. This also sets Party.Teleporting to `true`. If you send TeleportData, it must be a table without any number keys.
 
 <br>
 
@@ -276,13 +276,15 @@ priority (this isn't the same priority you provide)
 ["550001"] = 24762332
 ["550002"] = 1387132614
 ["990001"] = {321761, 213871, 213817127} <- group of 3 players
-["990002"] = 935144631 <- this would be the 4th entity and 6th player in the queue
+["990002"] = 935144631 <- this would be the 2nd entity in the priority and 6th player in the queue
 ["990003"] = 12376612
 }
 
 ["410784"] = 59826321
 	-> priority 41, entity number 784 in priority, player with UserId 59826321
 ```
+I will probably create a framework for MSS (like PartyService.Messaging) which will be used internally, but is also available to the user.
+Many more features are planned for queues. You could for example consider regions and friends.
 ### Properties
 #### ClassName
 ```lua

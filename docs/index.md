@@ -6,7 +6,7 @@ PartyService is a stand-alone module which handles all your matchmaking and many
 
 Its main features are:
 
-- Huge party system
+- Feature-rich party system
 - Global matchmaking queues including:
     - Priorities
 - handles all your MessagingService calls
@@ -22,5 +22,6 @@ Features coming soon:
 - Matching based on skill and other heavy improvements
 - Tracking of available requests, deal more thriftily with requests when close to limit
 - With PartyService's available tools it would be easy to make things like global lobbies/rooms and server lists
+- Self-adapting polling cooldown
 
 This module is still in beta and therefore has bugs. MemoryStoreService has bugs as well.
