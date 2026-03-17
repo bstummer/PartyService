@@ -1,14 +1,10 @@
 --[[
 
-Tutorial & Documentation: vaschex.github.io/PartyService
-Forum: 
+Tutorial & Documentation: https://bstummer.github.io/PartyService/
 
 Version of this module: 0.3.0-beta
 
-Created by Vaschex
-
-PartyService © 2021 by Vaschex is licensed under CC BY-NC 4.0. 
-https://creativecommons.org/licenses/by-nc/4.0/
+Created by bstummer
 
 ]]
 
